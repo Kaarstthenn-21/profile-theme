@@ -26,7 +26,7 @@ const greeting = {
     "A passionate DevOps and SRE 🚀 having an experience of administrate servers in linux and CI/ CD with Jenkins with aplications built in Net core, Angular, Node and More."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1a70ri0nfumWi5_BI12MYP4V6V0puYCRx/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 

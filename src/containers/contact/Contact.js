@@ -1,14 +1,22 @@
-import React, {useContext} from "react";
+import React, { useContext, createRef, useState } from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { illustration, contactInfo } from "../../portfolio";
+import { Fade } from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import profile from "../../assets/images/profile.png";
+import ColorThief from "colorthief";
 
 export default function Contact() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
+  const [colorArrays, setColorArrays] = useState([]);
+  const imgRef = createRef();
+  function getColorArrays() {
+    const colorThief = new ColorThief();
+    setColorArrays(colorThief.getColor(imgRef.current));
+  }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">
@@ -54,12 +62,20 @@ export default function Contact() {
           </div>
           <div className="contact-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={email} />
-            ) : (
               <img
-                alt="Man working"
-                src={require("../../assets/images/contactMailDark.svg")}
-              ></img>
+                style={{
+                  width: 350, height: 350,
+                  borderRadius: 200, marginTop: 10,
+                  marginLeft: 300, overflow: "hidden",
+                  borderWidth: 3, borderColor: "red"
+                }}
+                src={profile}
+                alt={"profile"}
+              />
+
+            ) : (
+              <DisplayLottie animationData={email} />
+
             )}
           </div>
         </div>
