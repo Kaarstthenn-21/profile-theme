@@ -4,6 +4,7 @@ import TalkCard from "../../components/talkCard/TalkCard";
 import {talkSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import AchievementCard from "../../components/achievementCard/AchievementCard";
 
 export default function Talks() {
   const {isDark} = useContext(StyleContext);
@@ -12,7 +13,7 @@ export default function Talks() {
   }
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="talks">
+      {/* <div className="main" id="talks">
         <div className="talk-header">
           <h1 className="talk-header-title">{talkSection.title}</h1>
           <p
@@ -39,6 +40,47 @@ export default function Talks() {
               />
             );
           })}
+        </div>
+      </div> */}
+       <div className="main" id="achievements">
+        <div className="achievement-main-div">
+          <div className="achievement-header">
+            <h1
+              className={
+                isDark
+                  ? "dark-mode heading achievement-heading"
+                  : "heading achievement-heading"
+              }
+            >
+              {talkSection.title}
+            </h1>
+            <p
+              className={
+                isDark
+                  ? "dark-mode subTitle achievement-subtitle"
+                  : "subTitle achievement-subtitle"
+              }
+            >
+              {talkSection.subtitle}
+            </p>
+          </div>
+          <div className="achievement-cards-div">
+          {talkSection.talks.map((talk, i) => {
+            return (
+              <TalkCard
+                key={i}
+                talkDetails={{
+                  title: talk.title,
+                  subtitle: talk.subtitle,
+                  slides_url: talk.slides_url,
+                  event_url: talk.event_url,
+                  image: talk.image,
+                  isDark
+                }}
+              />
+            );
+          })}
+          </div>
         </div>
       </div>
     </Fade>

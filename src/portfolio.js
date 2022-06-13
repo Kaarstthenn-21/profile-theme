@@ -156,11 +156,14 @@ const workExperiences = {
       company: "Smart Reasons",
       companylogo: require("./assets/images/smart.png"),
       date: "Dec 2021 – Present",
-      desc: "",
+      desc: "Migration of finance module services, Database tuning, modeling, creation of stored procedures. Working with enterprise architectures such as design patterns and high concurrency",
       descBullets: [
-        "Migration of finance module services",
-        "Integration with other microservices",
-        "Database tuning, modeling, creation of stored procedures"
+        "Docker",
+        "Net Core",
+        "Sql Server",
+        "PostgreSql",
+        "Bash Script - Jenkins",
+        "AWS - Monitoring, Deploy, Storage"
       ]
     },
     {
@@ -168,14 +171,30 @@ const workExperiences = {
       company: "Frescura Peruana S.A.C",
       companylogo: require("./assets/images/frescuraperuana.png"),
       date: "Oct - 2021 –  Present",
-      desc: "Development of an api, for entry, exit of products, stock management, debt management among other features for business management in addition to mobile application"
+      desc: "Development of an api, for entry, exit of products, stock management, debt management among other features for business management in addition to mobile application",
+      descBullets:[
+        "Angular",
+        "Net Core",
+        "Sql Server",
+        "Deploy AWS",
+        "Docker",
+        "Kubernetes"
+      ]
     },
     {
       role: "Full Stack Developer",
       company: "Corporación Nativa S.A.C",
       companylogo: require("./assets/images/nativapng.png"),
       date: "Jul 2021 – Ago 2021",
-      desc: "development of a web application for process management for sales of alpaca garments to the European market"
+      desc: "Elaboration of ERP for sale of alpaca garments, for recognized exporting company of products. In which you apply web technologies such as:Laravel, Docker, Sql Server AWS and more",
+      descBullets:[
+        "Laravel",
+        "Docker",
+        "Sql Server",
+        "AWS",
+        "and More Tecnologies Web"
+      ]
+
     },
 
   ]
@@ -192,13 +211,13 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
       image: require("./assets/images/gas.png"),
       projectName: "Migo Gas",
-      projectDesc: "Application for saving prices on fuel, gasoline and natural gas for home ",
+      projectDesc: "App to inform the best prices of fuels for cars as well as prices of natural gas for domestic consumption. With application of web technologies, mobile and cloud solutions with high concurrency ",
       footerLink: [
         {
           name: "Visit Website",
@@ -210,7 +229,7 @@ const bigProjects = {
     {
       image: require("./assets/images/frescuraperuana.png"),
       projectName: "Frescura Peruana",
-      projectDesc: "online store for sale of fit food",
+      projectDesc: "Web application, for sale of organic products at home, in addition to armed sales by routines and armed with personalized diets, exercised in Arequipa and soon the rest of Peru",
       footerLink: [
         {
           name: "Visit Website",
@@ -234,8 +253,8 @@ const achievementSection = {
     {
       title: "Amazon Web Services - Foundamentals",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+        "Fundamentals of cloud solutions and architecture, application deployment complying with the basic principles of CI/CD",
+      image: require("./assets/images/aws.png"),
       footerLink: [
         {
           name: "Certification",
@@ -258,10 +277,10 @@ const achievementSection = {
 
     {
       title: "Cisco Foundamentals",
-      subtitle: "Networking Foundamentals",
+      subtitle: "NetAcad - Courses By Tecsup",
       image: require("./assets/images/cisco.png"),
       footerLink: [
-        {name: "Certification", url: ""},        
+        {name: "Certification", url: "https://drive.google.com/file/d/1IhpKqkXEdJku9v04QHH_h3eJvPriNibh/view?usp=sharing"},        
       ]
     }
   ],
@@ -271,9 +290,9 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Blogs & News",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "News, technologies and trends for the world of programming",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
@@ -287,7 +306,18 @@ const blogSection = {
       title: "Why REACT is The Best?",
       description:
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+    },
+    {
+      url: "https://medium.com/the-programmer/kubernetes-fundamentals-for-absolute-beginners-architecture-components-1f7cda8ea536",
+      title : "Kubernetes Fundamentals",
+      description : "La necesidad misma de hacer que nuestra compleja aplicación sea altamente disponible, escalable, portátil e implementable en módulos pequeños de forma independiente conduce al nacimiento de Kubernetes"
+    },
+    {
+      url: "https://medium.com/@lopezlucas/identidad-como-servicio-idaas-asp-net-core-api-okta-5e89c6e91dc0",
+      title: "Identidad como Servicio (IDaaS) NetCore",
+      description: "Este es el tercer artículo de una serie sobre Identidad como Servicio — Identity-As-A-Service. Es este artículo vamos a ver cómo configurar una API ASP Net Core para validar las identidades de los usuarios usando Okta"
     }
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -306,6 +336,18 @@ const talkSection = {
       subtitle: "Codelab at GDG DevFest Karachi 2019",
       slides_url: "https://bit.ly/saadpasta-slides",
       event_url: "https://www.facebook.com/events/2339906106275053/"
+    },
+    {
+      title: "Terraform introduction Hashicorp Tecnology",
+      subtitle: "induction with terraform IAC",
+      slides_url: "https://docs.google.com/presentation/d/1O7oBkMUnYXkIglb1EVrQfs_0SAlywXS7l_0krVydCW0/edit?usp=sharing",
+      event_url: "https://www.terraform.io/"
+    },
+    {
+      title: "DevOps CI/CD Foundamentals ",
+      subtitle: "DevOps culture",
+      slides_url: "https://docs.google.com/presentation/d/1W3XG0eP2cyZywK5O3ZExgUvFvazpJCbGsp6SA6PJZro/edit?usp=sharing",
+      event_url: "/"
     }
   ],
   display: true // Set false to hide this section, defaults to true
